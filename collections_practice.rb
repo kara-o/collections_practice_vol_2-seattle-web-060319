@@ -35,7 +35,7 @@ def count_elements(array)
   array.each do |hash|
     if last_hash == nil || hash[:name] != last_hash[:name]
       hash[:count] = 1
-      last_hash = hash
+      hash = last_hash
       new_arr << hash
     else
       last_hash[:count] += 1
