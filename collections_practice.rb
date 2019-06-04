@@ -40,8 +40,9 @@ def count_elements(array)
     else
       last_hash[:count] += 1
     end
-    return new_arr
+    
   end
+  new_arr
 end
 
 
