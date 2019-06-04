@@ -25,20 +25,8 @@ end
 
 
 
-
-
-
-[{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
-
-
-
-
 # hash =  {:name => "blake"}
 # last_hash = {:name => "blake", :count => 2}
-
-
-[]
-
 
 
 def count_elements(array)
@@ -54,9 +42,6 @@ def count_elements(array)
     end
     return new_arr
   end
-      
-
-  
 end
 
 
