@@ -63,7 +63,7 @@ def find_cool(array)
   new_arr
 end
 
-
+schools.each |
 
   let(:schools) {
     {
