@@ -63,39 +63,29 @@ def find_cool(array)
   new_arr
 end
 
-schools.each |
-
-  let(:schools) {
-    {
-      "flatiron school bk" => {
-        :location => "NYC"
-      },
-      "flatiron school" => {
-        :location => "NYC"
-      },
-      "dev boot camp" => {
-        :location => "SF"
-      },
-      "dev boot camp chicago" => {
-        :location => "Chicago"
-      },
-      "general assembly" => {
-        :location => "NYC"
-      },
-      "Hack Reactor" => {
-        :location => "SF"
-      }
-    }
-  }
-  let(:organized_schools) {
-    {"NYC"=>["flatiron school bk", "flatiron school", "general assembly"],
-     "SF"=>["dev boot camp", "Hack Reactor"],
-     "Chicago"=>["dev boot camp chicago"]}
-
-
 
 def organize_schools(array)
-  
+  arr1 = []
+  arr2 = []
+  arr3 = []
+  new_hash = {}
+  schools.each do |school_name, info|
+    info.each do |location_key, city|
+      if city == "NYC"
+        arr1 << school_name
+      elsif city == "SF"
+        arr2 << school_name
+      elsif city == "Chicago"
+        arr3 << school_name
+      end
+    end
+  end
+
+  new_hash["NYC"] = arr1
+  new_hash["SF"] = arr2
+  new_hash["Chicago"] = arr3
+
+  new_hash
 end
   
 
