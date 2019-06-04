@@ -36,7 +36,7 @@ def count_elements(array)
     if last_hash == nil || hash[:name] != last_hash[:name]
       hash[:count] = 1
       last_hash = hash
-      new_arr << hash
+      new_arr << last_hash
     else
       last_hash[:count] += 1
     end
